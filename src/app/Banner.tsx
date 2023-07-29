@@ -173,7 +173,7 @@ const Banner = () => {
               {bgImages.map((index) => (
                 <button
                   key={index.id}
-                  className={`flex  items-center justify-center text-sm px-4 py-2 w-full hover:text-red-400 sm:text-lg lg:pr-0 lg:gap-3  ${
+                  className={`flex  items-center justify-center text-sm  text-gray-300 px-4 py-2 w-full hover:text-red-400 sm:text-lg lg:pr-0 lg:gap-3  ${
                     currentIndex === parseInt(index.id) - 1
                       ? "text-xl bg-gray-400/40 sm:text-2xl lg:text-3xl lg:bg-transparent"
                       : ""
@@ -209,7 +209,7 @@ const Banner = () => {
                   className="flex items-center justify-center lg:gap-1 lg:mt-2 hover:text-red-400 "
                 >
                   <p className="hidden lg:flex">MORE DETAILS</p>
-                  <FaArrowRight className=" w-8 h-8 p-2 " />
+                  <FaArrowRight className=" w-8 h-8 p-2 text-gray-300" />
                 </a>
               </div>
             );
