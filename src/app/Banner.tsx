@@ -20,7 +20,7 @@ const bgImages = [
 const navigation = [
   { name: "HOME", href: "#" },
   { name: "ABOUT", href: "#" },
-  { name: "TOURS", href: "#" },
+  { name: "TOURS", href: "#popular-tours" },
   { name: "GALLERY", href: "#" },
   { name: "CONTACT", href: "#" },
 ];
@@ -63,7 +63,7 @@ const Banner = () => {
     };
   }, [currentIndex, isPaused]);
 
-  const handleBgClick = (id:string) => {
+  const handleBgClick = (id: string) => {
     setIsPaused(true);
     setCurrentIndex(parseInt(id) - 1);
     setIsPaused(false);

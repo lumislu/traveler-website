@@ -21,7 +21,10 @@ const tours = [
 const Popular = () => {
   return (
     <>
-      <div className=" h-screen flex flex-col items-center justify-evenly">
+      <div
+        id="popular-tours"
+        className=" h-screen bg-popular flex flex-col items-center justify-evenly"
+      >
         <div className=" text-center p-8 ">
           <h2>POPULAR TOURS</h2>
           <p>熱門行程景點</p>
@@ -42,34 +45,33 @@ const Popular = () => {
         </div>
       </div>
       <div
-        className="h-screen flex flex-col  items-center justify-evenly bg-center bg-cover "
+        className=" h-screen flex flex-col items-center justify-evenly bg-cover bg-center"
         style={{ background: "url(../Image/2.png)" }}
       >
-        <div className=" flex flex-col  p-10 gap-6 lg:flex-row lg:items-end  ">
-          <div className="flex flex-col max-w-xl  gap-6">
-            <h1 className=" text-4xl font-extrabold">
+        <div className=" p-8 gap-8 flex flex-col items-center justify-center sm:items-end sm:flex-row">
+          <div className="flex flex-col  gap-4 ">
+            <h1 className=" text-4xl font-extrabold sm:text-5xl lg:text-6xl">
               Unveil the World Embrace Your Adventure
             </h1>
-            <a className="flex gap-4 p-2 hover:text-red-600" href="#">
+            <a className=" flex gap-4 p-2 hover:text-red-600" href="#">
               <FaRegPlayCircle className="text-2xl" />
               watch the vedio
             </a>
-            <p className="text-sm">
+            <p className=" text-sm">
               我們相信旅行是一種靈魂的探索，是心靈與世界的對話。無論是身歷其境的文字介紹、生動的圖片展示，還是獨特的旅遊建議，TRAVELER都將成為您旅行規劃不可或缺的指南。
               準備好了嗎？讓我們一同啟程吧！
             </p>
-            <p className="hidden sm:flex">Platja de Muro</p>
           </div>
-          <div className="  flex flex-col  gap-4 max-w-xs sm:flex-row  sm:max-w-lg ">
-            <video controls className="w-full ">
+          <div className=" flex justify-evenly max-w-lg sm:flex-row">
+            <video controls className=" w-2/5">
               <source src="../vedio/1.mp4" type="video/mp4" />
             </video>
-            <video controls className="w-full">
+            <video controls className=" w-2/5  ">
               <source src="../vedio/2.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
-        <footer className="flex  gap-4 text-3xl sm:text-4xl ">
+        <footer className=" w-full max-w-lg flex items-center justify-evenly text-3xl sm:text-4xl">
           <a className=" hover:text-red-300" href="">
             <AiOutlineInstagram />
           </a>

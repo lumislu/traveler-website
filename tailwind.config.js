@@ -7,10 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "header-bg":[ "url(../Image/2.png)","url(../Image/bg1.png)"],
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      color: {
+        "bg-popular": "rgba(12, 7, 10, 1)",
       },
     },
   },
