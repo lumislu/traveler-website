@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      color: {
-        "bg-popular": "rgba(12, 7, 10, 1)",
+      colors: {
+        "bg-popular-black": "rgba(12, 7, 10, 1)",
         "text-color": "rgba(255, 255, 255, 0.7)",
       },
     },

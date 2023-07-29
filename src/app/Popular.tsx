@@ -23,7 +23,7 @@ const Popular = () => {
     <>
       <div
         id="popular-tours"
-        className=" h-screen bg-popular flex flex-col items-center justify-evenly"
+        className=" h-screen bg-popular-black flex flex-col items-center justify-evenly"
       >
         <div className=" text-center p-8 text-color ">
           <h2>POPULAR TOURS</h2>
