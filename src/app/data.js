@@ -49,7 +49,7 @@ export const tours = [
 export const travelPlans = [
   {
     title: "歷史探險之旅",
-    imageUrl: "../Image/2.png",
+    imageUrl: "../Image/7.png",
     price: "NT$5,500",
     summary:
       "在這趟令人難忘的歷史之旅中，您將穿越時空，追隨文明的足跡，深入探索人類智慧與創意的演化。",

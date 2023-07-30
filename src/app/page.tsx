@@ -17,6 +17,7 @@ import {
 
 import Image from "next/image";
 import { bgImages, navigation, headerListMore, tours } from "./data";
+import React from "react";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -137,7 +138,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold  text-gray-300 sm:text-6xl lg:text-8xl">
                 Embrace Your Adventure
               </h1>
-              <p className="mt-6 text-base leading-8 font-light text-gray-300 lg:text-lg">
+              <p className="mt-6 text-xs  font-light text-gray-300 lg:text-lg">
                 無論您是喜愛挑戰極限的探險家、尋找文化交流的歷史愛好者，或者只是想要逃離繁囂，享受寧靜片刻的旅行者，TRAVELER都將成為您最值得信賴的旅遊夥伴。
               </p>
             </div>
@@ -145,7 +146,7 @@ export default function Home() {
               {bgImages.map((index) => (
                 <button
                   key={index.id}
-                  className={`flex  items-center justify-center text-sm  text-gray-300 px-4 py-2 w-full hover:text-red-400 sm:text-lg lg:pr-0 lg:gap-3  ${
+                  className={`flex  items-center justify-center text-xs  text-gray-300 px-4 py-2 w-full hover:text-red-400 sm:text-lg lg:pr-0 lg:gap-3  ${
                     currentIndex === parseInt(index.id) - 1
                       ? "text-xl bg-gray-400/40 sm:text-2xl lg:text-3xl lg:bg-transparent"
                       : ""
@@ -190,7 +191,7 @@ export default function Home() {
       </header>
       <div
         id="popular-tours"
-        className=" h-screen bg-popular-black flex flex-col items-center justify-evenly"
+        className=" h-screen  bg-gray-950 flex flex-col items-center justify-evenly"
       >
         <div className=" text-center p-8 text-gray-300 ">
           <h2>POPULAR TOURS</h2>
