@@ -5,11 +5,11 @@ export const bgImages = [
   { url: "../Image/8.png", id: "04" },
 ];
 export const navigation = [
-  { name: "HOME", href: "#" },
-  { name: "ABOUT", href: "#" },
-  { name: "TOURS", href: "#popular-tours" },
-  { name: "GALLERY", href: "#" },
-  { name: "CONTACT", href: "#" },
+  { name: "HOME", href: "/" },
+  { name: "ABOUT", href: "/about" },
+  { name: "TOURS", href: "/tours" },
+  { name: "GALLERY", href: "/gallery" },
+  { name: "CONTACT", href: "/contact" },
 ];
 
 import { GiTreasureMap, GiMountainRoad, GiKnifeFork } from "react-icons/gi";
@@ -45,7 +45,6 @@ export const tours = [
   },
 ];
 
-
 export const travelPlans = [
   {
     title: "歷史探險之旅",
@@ -55,6 +54,8 @@ export const travelPlans = [
       "在這趟令人難忘的歷史之旅中，您將穿越時空，追隨文明的足跡，深入探索人類智慧與創意的演化。",
     details:
       "第一天參觀古城遺址，第二天造訪著名的歷史博物館，第三天參觀宏偉的皇宮和皇家園林，第四天來到迷人的古鎮漫步。",
+    year: "2023",
+    month: "JUL",
     features:
       "專業導遊帶您深入了解每個景點的歷史背景和故事，舒適的交通和住宿為您的旅程增添便利與享受，小團體旅遊確保更貼心的服務和豐富的互動體驗。",
     notes:
@@ -68,6 +69,8 @@ export const travelPlans = [
       "沉浸在大自然的懷抱中，探索神秘的森林、壯麗的山脈，與大自然交融共鳴，找回內心的寧靜。",
     details:
       "第一天探索神秘的森林，第二天徜徉於壯麗的山脈，第三天與大自然交融共鳴，第四天品味當地特色美食。",
+    year: "2023",
+    month: "AUG",
     features:
       "專業導遊帶您深入了解大自然的奧秘，舒適的交通和住宿為您的旅程增添便利與享受，小團體旅遊確保更貼心的服務和豐富的互動體驗。",
     notes:
@@ -81,6 +84,8 @@ export const travelPlans = [
       "透過文化交流，品嚐道地美食、參與傳統節慶，讓您的旅程更加豐富多彩。",
     details:
       "第一天品嚐道地美食，第二天參與當地傳統節慶，第三天參觀當地藝術展覽，第四天參與文化交流活動。",
+    year: "2023",
+    month: "AUG",
     features:
       "專業導遊帶您深入了解當地文化，舒適的交通和住宿為您的旅程增添便利與享受，小團體旅遊確保更貼心的服務和豐富的互動體驗。",
     notes:

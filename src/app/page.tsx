@@ -1,28 +1,17 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import {
-  FaHiking,
-  FaSearch,
-  FaArrowRight,
-  FaRegPlayCircle,
-} from "react-icons/fa";
 
-import {
-  AiOutlineInstagram,
-  AiOutlineYoutube,
-  AiOutlineFacebook,
-} from "react-icons/ai";
+import { FaArrowRight, FaRegPlayCircle } from "react-icons/fa";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Image from "next/image";
-import { bgImages, navigation, headerListMore, tours } from "./data";
+import { bgImages, headerListMore, tours } from "./data";
 import React from "react";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     let timeout: NodeJS.Timeout;
@@ -48,90 +37,7 @@ export default function Home() {
         className="h-screen flex flex-col bg-cover bg-center  "
         style={{ backgroundImage: `url(${bgImages[currentIndex].url}` }}
       >
-        <nav>
-          <div
-            className="flex items-center justify-between p-6 lg:justify-center lg:mx-20   "
-            aria-label="Global"
-          >
-            <div className="flex ">
-              <a
-                href="#"
-                className="flex items-center justify-between -m-1.5 p-1.5  gap-2  text-gray-300   hover:text-red-400"
-              >
-                <FaHiking className="w-6 h-6" />
-                <span className="font-medium">TRAVELER</span>
-              </a>
-            </div>
-
-            <div className="flex lg:hidden ">
-              <button
-                type="button"
-                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-300   hover:text-red-400"
-                onClick={() => setMobileMenuOpen(true)}
-              >
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="hidden box-border h-10 border-b-2  justify-center w-full max-w-7xl lg:mx-20  lg:flex  ">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium  h-10 px-12  leading-10  text-gray-300  border-b-2 hover:border-red-400"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-            <div className="hidden lg:flex  lg:justify-end">
-              <a
-                href="#"
-                className="text-lg font-semibold leading-6 text-gray-300  hover:text-red-400"
-              >
-                <FaSearch />
-              </a>
-            </div>
-          </div>
-          <Dialog
-            as="div"
-            className="lg:hidden"
-            open={mobileMenuOpen}
-            onClose={setMobileMenuOpen}
-          >
-            <div className="fixed inset-0 z-50" />
-            <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-              <div className="flex items-center justify-between">
-                <a href="#" className="-m-1.5 p-1.5 flex gap-1">
-                  <FaHiking className="w-6 h-6 text-gray-900" />
-                  <p className=" text-gray-900 font-medium">你要去哪裡？</p>
-                </a>
-                <button
-                  type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700 hover:text-red-600"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="sr-only ">Close menu</span>
-                  <XMarkIcon className="h-6 w-6 " aria-hidden="true" />
-                </button>
-              </div>
-              <div className="mt-6 flow-root">
-                <div className="-my-6 divide-y divide-gray-500/10">
-                  <div className="space-y-2 py-6">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-100"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </Dialog.Panel>
-          </Dialog>
-        </nav>
+        <Navbar />
         <div className=" flex h-full flex-col  justify-center ">
           <div className=" flex w-full  flex-col justify-between items-center  sm:flex-row sm:justify-between ">
             <div className=" max-w-4xl text-center px-4  lg:text-left lg:pl-20">
@@ -242,17 +148,7 @@ export default function Home() {
             </video>
           </div>
         </div>
-        <footer className=" w-full max-w-lg flex items-center justify-evenly text-3xl text-gray-300 sm:text-4xl">
-          <a className=" hover:text-red-300" href="https://www.instagram.com">
-            <AiOutlineInstagram />
-          </a>
-          <a className=" hover:text-red-300" href="https://www.youtube.com">
-            <AiOutlineYoutube />
-          </a>
-          <a className=" hover:text-red-300" href="https://www.facebook.com">
-            <AiOutlineFacebook />
-          </a>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

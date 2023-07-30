@@ -18,7 +18,7 @@ const tour = () => {
           src={travelPlans[0].imageUrl}
           alt=""
         />
-        <div className="text-xs  text-left flex flex-col gap-6 p-4">
+        <div className="text-xs  text-left flex flex-col gap-6 p-4 ">
           <p className="text-lg">價錢：{travelPlans[0].price} </p>
           <p className=" ">行程特色：{travelPlans[0].features} </p>
           <p className="">詳細行程：{travelPlans[0].details} </p>
