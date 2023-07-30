@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const list = () => {
   return (
-    <div className=" h-screen bg-gray-950 text-gray-300">
+    <div className=" h-full bg-gray-950 text-gray-300">
       <Navbar />
       <main className="text-center flex flex-col items-center justify-center p-6 ">
         <h1 className="text-xl mb-10">
