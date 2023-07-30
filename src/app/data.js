@@ -35,13 +35,19 @@ export const headerListMore = [
 ];
 
 export const tours = [
-  { url: "../Image/4.png", city: "Paris", country: "France" },
-  { url: "../Image/5.png", city: "Hakone", country: "Japan" },
-  { url: "../Image/6.png", city: "Platja de Muro", country: "Spain" },
+  { url: "../Image/4.png", city: "Paris", country: "France", href: "/tours" },
+  { url: "../Image/5.png", city: "Hakone", country: "Japan", href: "/tours" },
+  {
+    url: "../Image/6.png",
+    city: "Platja de Muro",
+    country: "Spain",
+    href: "/tours",
+  },
   {
     url: "../Image/7.png",
     city: "Valley of Fire State Park",
     country: "United States",
+    href: "/tours",
   },
 ];
 

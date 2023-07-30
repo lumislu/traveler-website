@@ -105,16 +105,17 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2  gap-2 p-5   h-3/5  w-full   sm:flex   sm:gap-6 lg:max-w-7xl">
           {tours.map((item, index) => (
-            <div
+            <a
               key={index}
               className=" h-full w-full bg-cover bg-center  cursor-pointer "
               style={{ backgroundImage: `url(${item.url}` }}
+              href={item.href}
             >
               <div className="h-full w-full flex flex-col  items-center  justify-end  text-center text-gray-300  text-xs p-6 gap-2 font-semibold hover:justify-center  hover:bg-gray-200/40  hover:text-red-400">
                 <p className="sm:text-base">{item.city}</p>
                 <p>{item.country}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
