@@ -9,7 +9,7 @@ export default function contact() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div>
+    <div className="bg-gray-950">
       <Navbar />
       <div className=" bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
