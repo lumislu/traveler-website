@@ -1,3 +1,9 @@
+website:  
+https://traveler-website-seven.vercel.app
+![web](https://github.com/lumislu/traveler-website/assets/117718655/fa720ae7-05e9-44ac-a518-23bcfdd3161c)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
